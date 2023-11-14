@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.kishorbhatta.vocabsgre.MainActivity">
+
+    <ViewFlipper
+            android:id="@+id/viewFlipper"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="6dp" >
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Abound"
+                    android:textColor="#081248"
+                    android:textSize="35dp"
+                    android:textAllCaps="false"
+                    android:textStyle="normal|bold">
+            </TextView>
+
+            <View
+                    android:id="@+id/divider1"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="35dp"
+                    android:background="?android:attr/listDivider"
+            />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:text="Exist in large numbers or amounts, Be full of, be plentiful, be abundant, be numerous, proliferate, superabound "
+                    android:textColor="#000000"
+                    android:textSize="20dp">
+            </TextView>
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="150dp"/>
+            <ImageView
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/imageView1"
+                    android:layout_width="196dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/grev"
+                    android:minWidth="150dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Amorphous"
+                    android:textColor="#081248"
+                    android:textSize="35dp"
+                    android:textAllCaps="false"
+                    android:textStyle="normal|bold">
+            </TextView>
+
+            <View
+                    android:id="@+id/divider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="35dp"
+                    android:background="?android:attr/listDivider"
+            />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:text="Without a clearly defined shape or form."
+                    android:textColor="#000000"
+                    android:textSize="20dp">
+            </TextView>
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="150dp"/>
+            <ImageView
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/imageView2"
+                    android:layout_width="196dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/grev"
+                    android:minWidth="150dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Belie"
+                    android:textColor="#081248"
+                    android:textSize="35dp"
+                    android:textAllCaps="false"
+                    android:textStyle="normal|bold">
+            </TextView>
+
+            <View
+                    android:id="@+id/divider3"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="35dp"
+                    android:background="?android:attr/listDivider"
+            />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:text="Fail to give a true impression of (something)"
+                    android:textColor="#000000"
+                    android:textSize="20dp">
+            </TextView>
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="150dp"/>
+            <ImageView
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/imageView3"
+                    android:layout_width="196dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/grev"
+                    android:minWidth="150dp"/>
+
+        </LinearLayout>
+
+    </ViewFlipper>
+    <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+    <Button
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prev"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/next"/>
+</RelativeLayout>
